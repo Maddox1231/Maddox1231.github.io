@@ -3,10 +3,10 @@
 }
 
 .schedule {
-    border: 1px red;
+    color: 1px red;
 }
 
 .hotpink {
     color: hotpink
-    border-bottom 10px dotted purple
+    border-bottom 10px dotted purple;
 }
