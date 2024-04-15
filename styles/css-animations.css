@@ -30,7 +30,7 @@
 }
 
 .button-press-animation button:active {
-    transform: translateY(2px);
+    transform:translateY(2px);
     transform:scale(0.8);
 }
 
