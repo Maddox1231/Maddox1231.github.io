@@ -1,35 +1,36 @@
 
-console.log("first 10 square numbers:");
+
+console.log("Task 1");
 for (let i = 1; i <= 10; i++) {
-    console.log(i + "*" + i + " = " + (i * i));
+    console.log(i * i);
 }
 
 
-console.log("countdown");
+console.log("Task 2");
 for (let i = 5; i >= 1; i--) {
     console.log(i);
 }
-console.log("blastoff");
+console.log("Blastoff!");
 
 
-console.log("even numbers from 1 to 50");
-for (let i = 2; i <= 50; i += 2) {
-    console.log(i);
-}
+console.log("Task 3");
+for (let i = 1; i <= 50; i++) 
+    if (i % 2 === 0) {
+        console.log(i);
+    }
 
 
+console.log("Task 4");
 let sum = 0;
 for (let i = 1; i <= 100; i++) {
     sum += i;
 }
-console.log("sum of 1 through 100", sum);
+console.log(sum);
 
 
-console.log("first 10 factorials");
+console.log("Task 5");
+let factorial = 1;
 for (let i = 1; i <= 10; i++) {
-    let factorial = 1;
-    for (let j = 1; j <= i; j++) {
-        factorial *= j;
-    }
-    console.log(i + "!" + " = " + factorial);
+    factorial *= i;
+    console.log(factorial);
 }
