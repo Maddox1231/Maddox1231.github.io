@@ -1,31 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-
-
 <head>
+    <link rel="icon" type="image/x-icon" href="images/favicon.jpg">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link href="styles/main.css" rel="stylesheet">
+    <link href="styles/about.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #333;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+    </style>
 </head>
 
 
 <body>
+    <nav>
+        <ul>
+            <div class="button-press-animation">
+                <button href="mainweb.html">Home</button>
+                <button href="howitworks.html">How It Works</button>
+                <button href="goal.html">My Goal</button>
+            </div>
+        </ul>
+    </nav>
     <h1>Maddox N</h1>
-    <div class="job-title">School Student</div>
-    <p>I enjoy sports, animals, and videogames.</p>
-
-
-    <p></p>
-
-
+    <div class="job-title">School Student/Chair seller pro</div>
+    <p>I enjoy sports, hanging out with friends, and videogames</p>
     <h2>Contact information</h2>
     <ul class="contact-details">
         <li>Email: <a href="mailto:fakeemail@gmail.com">fakeemail@gmail.com</a></li>
-        <li>Web: <a href="http://example.com">http://example.com</a></li>
-        <li>Tel: 123 4567 8910</li>
+        <li>Phone Number: 123 4567 8910</li>
     </ul>
+    <p class="contact">If you need to contact me for any reason, feel free to and i will try to respond within 500 business days</p>
+    <form
+  action="https://formspree.io/f/mbjnenbr"
+  method="POST"
+>
+  <label>
+    Your email:
+    <input type="email" name="email">
+  </label>
+  <label>
+    Your message:
+    <textarea name="message"></textarea>
+  </label>
+  <button type="submit">Send</button>
+</form>
 </body>
-
-
 </html>
