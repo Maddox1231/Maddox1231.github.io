@@ -97,3 +97,57 @@ color:brown
   .rating > input:checked ~ label {
     color: #ffa723;
   }
+
+  .name {
+    color: green;
+    font-size: 2em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border-bottom: 10px blue;
+  }
+  
+  .contact {
+    font-size: 1.5em;
+    font-style: italic;
+  }
+  
+  a:link,
+  a:visited {
+    color: #fb6542;
+  }
+  
+  a:hover {
+    text-decoration: none;
+    color: darkgray;
+  }
+  
+  ul.contact-details {
+    background-color: transparent;
+    padding: 10px;
+  }
+  
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  h1 {
+    color: green;
+    font-size: 2em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+  
+  .job-title {
+    color: red;
+    font-weight: bold;
+  }
+  .contact {
+  color:black
+  }
+  
+  .hobby {
+  color:red
+  }
+  
+  .contact-details {
+    color:darkblue
+  }
+  
