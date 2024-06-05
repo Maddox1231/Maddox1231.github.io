@@ -108,6 +108,7 @@ color:brown
   .contact {
     font-size: 1.5em;
     font-style: italic;
+    color:darkcyan
   }
   
   a:link,
@@ -138,9 +139,6 @@ color:brown
   .job-title {
     color: red;
     font-weight: bold;
-  }
-  .contact {
-  color:black
   }
   
   .hobby {
