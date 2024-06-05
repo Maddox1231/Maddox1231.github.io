@@ -91,7 +91,7 @@ color:brown
   
   .rating:not(:checked) > label:hover,
   .rating:not(:checked) > label:hover ~ label {
-    color: #ff9e0b;
+    color: darkorange;
   }
   
   .rating > input:checked ~ label {
