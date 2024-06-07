@@ -16,6 +16,9 @@
     </style>
 </head>
 <body>
+    <div>
+        <img src="images/smile.jpg" style="width: 120px; height: auto; float: right;" class="spaz">
+    </div>
         <ul>
             <div></div>
                 <a class="button1" href="about.html">About me</a>
@@ -29,43 +32,43 @@
     </p>
 
     <div class="chair">
-        <img src="images/chair1.jpg" alt="chair 1" style="width: 120px; height: auto;">
+        <img src="images/chair1.jpg" alt="chair 1" style="width: 120px; height: auto;" class="rotate">
         <p>A very nice everyday chair that can be used for eating, relaxing, or anything else!</p>
         <p class="price">$180/₫4581000.00</p>
     </div>
 
     <div class="chair">
-        <img src="images/chair2.jpg" alt="chair 2" style="width: 120px; height: auto;">
+        <img src="images/chair2.jpg" alt="chair 2" style="width: 120px; height: auto;" class="rotate">
         <p>A nice, relaxing, high quality rocking chair, even your grandpa will like it!</p>
         <p class="price">$250/₫6362500.00</p>
     </div>
 
     <div class="chair">
-        <img src="images/chair3.jpg" alt="chair 3" style="width: 120px; height: auto;">
+        <img src="images/chair3.jpg" alt="chair 3" style="width: 120px; height: auto;" class="rotate">
         <p>Simple, but sleek design perfect for everyday sitting</p>
         <p class="price">$200/₫5090000.00</p>
     </div>
 
     <div class="chair">
-        <img src="images/chair4.jpg" alt="chair 4" style="width: 200px; height: auto;">
+        <img src="images/chair4.jpg" alt="chair 4" style="width: 200px; height: auto;" class="rotate">
         <p>A fancy, beautiful, and high quality chair that is perfect for the modern house</p>
         <p class="price">$350/₫8907500.00</p>
     </div>
 
     <div class="chair">
-        <img src="images/chair5.jpg" alt="chair 5" style="width: 120px; height: auto;">
+        <img src="images/chair5.jpg" alt="chair 5" style="width: 120px; height: auto;" class="rotate">
         <p>A simple, wood chair great for dinner, or anything you want</p>
         <p class="price">$150/₫3817500.00</p>
     </div>
 
     <div class="chair">
-        <img src="images/chair6.jpg" alt="chair 6" style="width: 120px; height: auto;">
+        <img src="images/chair6.jpg" alt="chair 6" style="width: 120px; height: auto;" class="rotate">
         <p>A uniqe chair, good for spicing up your home</p>
         <p class="price">$220/₫5599000.00</p>
     </div>
 
     <div class="chair">
-        <img src="images/chair7.jpg" alt="chair 7" style="width: 120px; height: auto;">
+        <img src="images/chair7.jpg" alt="chair 7" style="width: 120px; height: auto;" class="rotate">
         <p>Very, comfortable, very nice, perfect for comfort and style</p>
         <p class="price">$270/6871500.00</p>
     </div>
@@ -82,6 +85,27 @@
         <input value="1" name="rate" id="star1" type="radio">
         <label title="text" for="star1"></label>
       </div>
-      
+<script>
+let chairs = document.querySelectorAll(".chair");
+chairs.forEach(chair => {
+  let img = chair.querySelector("img");
+  let current_rotation = 0;
+  img.addEventListener('click', function(){
+    current_rotation = (current_rotation + 360) ;
+    img.style.transform = 'rotate(' + current_rotation + 'deg)';
+  });
+});
+  const smile = document.getElementById('smile');
+
+  smile.addEventListener('click', () = {
+  });
+</script>
+
+<style>
+ .spaz {
+    animation: spaz-out 2s infinite;
+  }
+</style>
+</script>
 </body>
 </html>
