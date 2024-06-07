@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
+    <title>We Have Chairs</title>
     <link rel="icon" type="image/x-icon" href="images/favicon.jpg">
     <link rel="stylesheet" href="styles/index.css">
     <script src="mainweb.html"></script>
@@ -13,19 +13,30 @@
             text-align: center;
             margin-bottom: 20px;
         }
+        .spaz {
+            animation: spaz 0.3s infinite;
+        }
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            display: inline;
+            margin-right: 10px;
+        }
     </style>
 </head>
 <body>
     <div>
-        <img src="images/smile.jpg" style="width: 120px; height: auto; float: right;" class="spaz">
+        <img src="images/smile.jpg" alt="Smile" style="width: 120px; height: auto; float: right;" class="spaz">
     </div>
-        <ul>
-            <div></div>
-                <a class="button1" href="about.html">About me</a>
-                <a class="button2" href="FAQs.html">FAQs</a>
-                <a class="button3" href="goal.html">My Goal</a>
-            </div>
-        </ul>
+    <ul>
+        <li><a class="button1" href="about.html">About me</a></li>
+        <li><a class="button2" href="FAQs.html">FAQs</a></li>
+        <li><a class="button3" href="goal.html">My Goal</a></li>
+    </ul>
     <h1 class="title">Wehavechairs.com</h1>
     <p class="description"> 
         Come here come now, we have chairs of all variety! Small, big, wide, tall, anything you want!
@@ -63,13 +74,13 @@
 
     <div class="chair">
         <img src="images/chair6.jpg" alt="chair 6" style="width: 120px; height: auto;" class="rotate">
-        <p>A uniqe chair, good for spicing up your home</p>
+        <p>A unique chair, good for spicing up your home</p>
         <p class="price">$220/₫5599000.00</p>
     </div>
 
     <div class="chair">
         <img src="images/chair7.jpg" alt="chair 7" style="width: 120px; height: auto;" class="rotate">
-        <p>Very, comfortable, very nice, perfect for comfort and style</p>
+        <p>Very comfortable, very nice, perfect for comfort and style</p>
         <p class="price">$270/6871500.00</p>
     </div>
     
@@ -84,24 +95,18 @@
         <label title="text" for="star2"></label>
         <input value="1" name="rate" id="star1" type="radio">
         <label title="text" for="star1"></label>
-      </div>
-<script>
-let chairs = document.querySelectorAll(".chair");
-chairs.forEach(chair => {
-  let img = chair.querySelector("img");
-  let current_rotation = 0;
-  img.addEventListener('click', function(){
-    current_rotation = (current_rotation + 360) ;
-    img.style.transform = 'rotate(' + current_rotation + 'deg)';
-  });
-});
-  const smile = document.getElementById('smile');
-</script>
-<style>
- .spaz {
-    animation: spaz 0.3s infinite;
-  }
-</style>
-</script>
+    </div>
+
+    <script>
+        let chairs = document.querySelectorAll(".chair");
+        chairs.forEach(chair => {
+            let img = chair.querySelector("img");
+            let current_rotation = 0;
+            img.addEventListener('click', function(){
+                current_rotation = (current_rotation + 360);
+                img.style.transform = 'rotate(' + current_rotation + 'deg)';
+            });
+        });
+    </script>
 </body>
 </html>
