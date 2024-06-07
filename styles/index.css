@@ -175,6 +175,6 @@ color:brown
       transform: translate(25px, 75px);
     }
     100% {
-      transform: translate(0, 0);
+      transform: translate(50, 100);
     }
   }
